@@ -63,6 +63,7 @@ The efficiency of a distributed system can be defined as a cost function of any 
 In reality it's very tough to determine the efficiency by taking all these into account instead we settle down for rough estimates of those metrics.
 
 #### Serviceablity or Manageability <a name="manageability"></a>
+<hr/>
 
 Serviceablity or Manageability is the simplicity or speed with which a system can be maintained or repaired. If the system takes to much time to fix, then the availability of the system decreases. 
 
