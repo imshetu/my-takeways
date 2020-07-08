@@ -3,6 +3,7 @@
 * [Reliability](#reliability)
 * [Availablity](#availability)
 * [Efficiency](#efficiency)
+* [Serviceability or Manageability](#manageability)
 
 #### Scalability <a name="scalability"></a>
 <hr/>
@@ -41,10 +42,28 @@ Reliability is the availability over time considering the real world scenrio wit
 
 ##### Reliability vs Availability
 A reliable system is available but an available system might not be reliable. Let's say an e-commerce website that operates without any testing might be available 99.99% of the time with redundancy and monitoring but no way this system is reliable. 
+
 If someone hacks this website and take some components down, then it will also lose its availability as well as its reliablity which eventually raise the issue of customer dissatisfaction.
 
 #### Efficiency <a name="efficiency"></a>
 <hr/>
 Efficiency of any distributed system is generally measured by two factors.
+
 * Latency - Response time of the system to get the first item
 * Bandwidth - Throughput of the system in unit time. 
+
+The bandwidth of the system can be broken two into two more metrics
+
+* Number of messages sent by the system in a given amount of time irrespective of message size
+* Size of messages in that window
+
+
+The efficiency of a distributed system can be defined as a cost function of any of the metric above. But it would be overly simplistic. Because it does not take into account of the complext topography, architecture and heterogenity of machines that are deployed.
+
+In reality it's very tough to determine the efficiency by taking all these into account instead we settle down for rough estimates of those metrics.
+
+#### Serviceablity or Manageability <a name="manageability"></a>
+
+Serviceablity or Manageability is the simplicity or speed with which a system can be maintained or repaired. If the system takes to much time to fix, then the availability of the system decreases. 
+
+This also takes into account the time needed to diagnose or troubleshoot the issues arised. Early detection and monitoring can be helpful in this regard.
