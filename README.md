@@ -1,3 +1,3 @@
 My takeaway from every reading
 
-* [System Design](imshetu/my-takeways/blob/master/system-design/README.md)
+* [System Design](system-design/README.md)
