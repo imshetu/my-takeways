@@ -32,5 +32,18 @@ Few techniques of cache invalidation are described below
 |Name|Cache<br/>Time of writing|Database<br/>Time of writing|Pros|Cons|
 |------------|------------|------------|------------|------------|
 |Write Through Cache|Same|Same|<ul><li>Consistent</li><li>Both cache & database remain in sync</li></ul>|<ul><li>As the data will be returned after 2 write operations, it becomes slow in case of write heavy application</li></ul>|
+|Write around cache|Last|First|<ul><li>Data Persistance as DB will be updated first</li></ul>|<ul><li>If recently writtend data is requested then it will cause a cache miss, therefor database will be queried again</li></ul>|
+|Write back cache|First|Last|<ul><li>Can be fast as the response will be returned after writing to cache. </li></ul>|<ul><li>Extremely risky in case of crash or server failure as the data may or may not be written to the database</li></ul>|
 ### Cache Eviction <a name="evication"></a>
 <hr/>
+
+There are serveral policy for cache eviction. Eviction policy actually determines which of the records will be updated when we update our cache or invalidate our cache.
+
+|Method|Short Form|Policy Details
+|------------|--------------|------------|
+|First in First out|FIFO| The elements that are cached first will be removed first|
+|Last in First out|LIFO| The elements that are cached latest will be removed first
+|Least Recently Used|LRU| Least recently used elements will be removed.
+|Most Recently Used|MRU| Most recently used elements will be removed first
+|Least Frequently Used|LFU|Least frequently used one will be removed
+|Random Replacement|RR|An element will be randomly selected and replaced.
