@@ -34,7 +34,7 @@ Few techniques of cache invalidation are described below
 |Write Through Cache|Same|Same|<ul><li>Consistent</li><li>Both cache & database remain in sync</li></ul>|<ul><li>As the data will be returned after 2 write operations, it becomes slow in case of write heavy application</li></ul>|
 |Write around cache|Last|First|<ul><li>Data Persistance as DB will be updated first</li></ul>|<ul><li>If recently writtend data is requested then it will cause a cache miss, therefor database will be queried again</li></ul>|
 |Write back cache|First|Last|<ul><li>Can be fast as the response will be returned after writing to cache. </li></ul>|<ul><li>Extremely risky in case of crash or server failure as the data may or may not be written to the database</li></ul>|
-### Cache Eviction <a name="evication"></a>
+### Cache Eviction <a name="eviction"></a>
 <hr/>
 
 There are serveral policy for cache eviction. Eviction policy actually determines which of the records will be updated when we update our cache or invalidate our cache.
