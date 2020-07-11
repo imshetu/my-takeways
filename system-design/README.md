@@ -3,3 +3,4 @@ Chapters
 * [Loadbalancer](chapters/loadbalancer/README.md)
 * [Caching](chapters/caching/README.md)
 * [Data partitioning](chapters/partitioning/README.md)
+* [Index](chapters/indexes/README.md)
