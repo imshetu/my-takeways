@@ -13,6 +13,7 @@ Typically, proxies are used to filter requests, log requests and sometimes trans
 ### Types of proxy <a name="types"></a>
 <hr/>
 There are various kinds of proxy available. Those are.
+
 #### Open Proxy
 
 Open proxy is available in internet publicly. There are two kinds of open proxy. 
