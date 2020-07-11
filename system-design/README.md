@@ -5,3 +5,4 @@
 * [Data partitioning](chapters/partitioning/README.md)
 * [Index](chapters/indexes/README.md)
 * [Proxy](chapters/proxy/README.md)
+* [Redundancy & Replication](chapters/redundancy/README.md)
