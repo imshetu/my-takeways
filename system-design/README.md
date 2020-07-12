@@ -7,3 +7,4 @@
 * [Proxy](chapters/proxy/README.md)
 * [Redundancy & Replication](chapters/redundancy/README.md)
 * [SQL vs NoSQL](chapters/database/README.md)
+* [CAP Theorem](chapters/cap/README.md)
