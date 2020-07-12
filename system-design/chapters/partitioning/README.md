@@ -8,18 +8,21 @@
 
 ### What is data partitioning? <a name="what"></a>
 <hr/>
+
 Data partition is a technique which breaks down a large database into multiple databases. It is a process of breaking database into smaller databases that can be hosted in multiple machines for improving manageability, performance, availability and load balancing to redirect requests. In reality, at certain point of scaling, adding more servers becomes more feasible that adding beefier servers.
 
 ### Partitioning Method <a name="method"></a>
 <hr/>
 There are several type of partitioning method. Here we will see the most popular ones.
 
-#####Horizontal paritioning
+##### Horizontal paritioning
+
 In this partitioning method we store rows to a table based on a range. For example let's think about we like to store places in a table. So we will keep places of a zip code in one table and one in other. Horizontal partition is also known as data sharding. 
 
 The main problem of sharding is that it often creates unbalanced tables where one table with be read more than the others if the records are not distributed uniformly over the range.
 
-#####Vertical partitioning
+##### Vertical partitioning
+
 We can store also save a specific set of features into to different database in different servers. This is called vertical partitioning. For instance, let's consider we are designing instagram. We can easily store our user information to a database, post information in another and dedicate a separate database for photos of the users.
 
 But often this kind of parititioning also requires another set of partitioning under this. Because it won't be a good idea to query among 10 billion of photos from 140 million of users in a table. 
@@ -32,6 +35,7 @@ Though from the view point of scaling this method might looks lucrative because 
 
 ### Partitioning Criteria<a name="criteria"></a>
 <hr/>
+
 The parition criteria on which the records will be partitioned are described below.
 
 ##### Key or Hash based partitioning

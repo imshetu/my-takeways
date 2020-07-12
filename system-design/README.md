@@ -6,3 +6,4 @@
 * [Index](chapters/indexes/README.md)
 * [Proxy](chapters/proxy/README.md)
 * [Redundancy & Replication](chapters/redundancy/README.md)
+* [SQL vs NoSQL](chapters/database/README.md)
