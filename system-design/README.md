@@ -9,3 +9,4 @@
 * [SQL vs NoSQL](chapters/database/README.md)
 * [CAP Theorem](chapters/cap/README.md)
 * [Consistent Hashing](chapters/consistent_hashing/README.md)
+* [HTTP Connections](chapters/http/README.md)
